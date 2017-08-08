@@ -1,0 +1,46 @@
+import turtle
+
+window = turtle.Screen()  # Global variables
+window.bgcolor("grey")
+turtle.speed(1)
+
+
+def draw_shapes():
+    angie = turtle.Turtle() # Draws a circle
+    angie.shape("triangle")
+    angie.color("green")
+    i = 0
+    while  i < 1: # While loop that draws one circle and fills it
+        angie.color("black", "red")
+        angie.begin_fill()    
+        angie.circle(100)
+        i = i + 1
+        angie.end_fill()
+        angie.pendown()
+        angie.hideturtle()
+    
+    brad = turtle.Turtle()   #Draws a square
+    brad.shape("circle")
+    brad.color("blue")
+    brad.fill(True)
+    for i in  range(4): # For loop that draws one squre and fills it
+        brad.color("white", "blue")
+        brad.forward(100)
+        brad.right(90)
+        brad.pendown()
+        brad.hideturtle()
+    brad.fill(False)
+
+    leven = turtle.Turtle()  #Draws a triangle
+    leven.color("purple")
+    leven.fill(True)
+    for i in  range(5): # For loop that draws one triangle and fills it
+        leven.color("green", "purple")
+        leven.forward(100)
+        leven.left(120)
+        leven.pendown()
+        leven.hideturtle()
+    leven.fill(False)
+
+    window.exitonclick()
+draw_shapes()    
