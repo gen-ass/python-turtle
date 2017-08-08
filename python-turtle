@@ -1,0 +1,46 @@
+import  turtle
+
+def draw_square () :
+        window  =  turtle.Screen ()
+        window.bgcolor ("blue")
+        brad  =  turtle.Turtle ()
+        
+        brad.forward (100)
+        brad.shape ("square")
+        brad.color ("red")
+        brad.speed (1)
+
+        brad.left (90)
+        brad.forward (100)
+        brad.left (90)
+        brad.forward (100)
+        brad.left (90)
+        brad.forward (100)
+        brad.left (90)
+
+        brad.forward (50)
+        brad.right (45)
+        brad.forward (50)
+        brad.right(45)
+        brad.forward (50)
+        brad.right (45)
+
+        brad.forward (50)
+        brad.left (45)
+        brad.forward (50)
+        brad.left (45)
+
+        brad.forward (50)
+        brad.left (45)
+        brad.forward (50)
+        brad.left (45)
+
+        brad.forward (50)
+        brad.left (-45)
+        brad.forward (50)
+        brad.left (275)
+        brad.forward (50)
+
+        window.exitonclick ()
+
+draw_square ()
